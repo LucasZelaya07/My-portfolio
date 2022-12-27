@@ -1,0 +1,121 @@
+/* Index */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 0 0;
+}
+
+.caja{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+.nav-imagen{
+    width: 100%;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+.principal{
+    padding: 3em 0;
+    background: lightblue;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+}
+
+.principal p{
+    margin: 0 5% 1em;
+    font-size: 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+.conocimientos{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-conocimientos{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-conocimientos{
+    width: 40%;
+    padding: 0 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+    font-weight: bold
+}
+
+.items:before{
+    content:"★"
+}
+.items::after{
+    content:"★"
+}
+
+.imagen-conocimientos{
+    width: 40%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-conocimientos:hover{
+    opacity: 0.3;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .contenido-conocimientos, .nav-imagen {
+        width: auto;
+    }
+    .lista-conocimientos, .imagen-conocimientos{
+        width: 100%;
+    }
+
+}
