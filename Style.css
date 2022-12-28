@@ -150,10 +150,10 @@ footer{
     nav{
         position: static;
     }
-    .caja, .principal, .contenido-conocimientos, .nav-imagen {
+    .caja, .principal, .contenido-conocimientos {
         width: auto;
     }
-    .lista-conocimientos, .imagen-conocimientos{
+    .lista-conocimientos, .imagen-conocimientos, .nav-imagen{
         width: 100%;
     }
 
