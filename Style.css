@@ -143,6 +143,48 @@ footer{
     transform: scale(1.2);
 }
 
+/* Contacto */
+.main-contacto{
+    background: linear-gradient(#cce9ee, rgb(151, 229, 255))
+}
+form{
+    margin: auto 40px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+}
+.footer-contacto{
+    background: linear-gradient(#cce9ee, rgb(151, 229, 255))
+}
+
 @media screen and (max-width:480px){
     h1{
         text-align: center;
