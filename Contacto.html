@@ -30,21 +30,21 @@
         <form action="https://formsubmit.co/34e0067c7111c7534b18da2b04ed8391" method="POST">
 
             <label for="nombreyapellido">Nombre y apellido</label>
-            <input type="text" id="nombreyapellido" class="input-padron" required>
+            <input type="text" id="nombreyapellido" name="nombrecompleto" class="input-padron" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com">
+            <input type="email" id="email" name="email" class="input-padron" required placeholder="email@dominio.com">
 
             <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" class="input-padron" required>
+            <input type="text" id="asunto" name="asunto" class="input-padron" required>
 
             <label for="telefono">Telefono</label>
-            <input type="number" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+            <input type="number" id="telefono" name="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
             <label for="mensaje">Mensaje</label>
-            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+            <textarea cols="70" rows="10" id="mensaje" name="mensaje" class="input-padron" required></textarea>
 
-            <input type="submit" value="Enviar" class="enviar">
+            <input type="submit" value="Enviar" name="Enviar" class="enviar">
             <input type="hidden" name="_next" value="https://lucaszelaya.netlify.app/contacto" >
 
         </form>
