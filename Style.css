@@ -195,8 +195,11 @@ form label, form legend{
     .caja, .principal, .contenido-conocimientos {
         width: auto;
     }
-    .lista-conocimientos, .imagen-conocimientos, .nav-imagen{
+    .lista-conocimientos, .imagen-conocimientos, .nav-imagen, form, body{
         width: 100%;
+    }
+    .enviar{
+        width: 50%;
     }
 
 }
