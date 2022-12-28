@@ -25,21 +25,22 @@
             </div>
         </header>
         <main  class="main-contacto">
-            <form action="https://formsubmit.co/34e0067c7111c7534b18da2b04ed8391" method="POST">
+            <form action="send.php" method="post" name="contacto" id ="contacto" >
+
                 <h2 class="h2-contacto"> CONTACTO</h2>
-                <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required>
+                <label for="nombre-completo">Nombre y Apellido</label>
+                <input name="nombre" type="text" id="nombre-completo" class="input-padron">
 
                 <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                <input name="email" type="email" id="correoelectronico" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" class="input-padron" required placeholder="email@dominio.com">
 
                 <label for="telefono">Teléfono</label>
                 <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-
-                <button type="submit" value="enviar" class="enviar">
+                <textarea cols="70" rows="10" id="mensaje" name="comentarios" class="form-control" required></textarea>
+                <input type="submit" value="Enviar formulario" class="enviar">
+                <input type="Reset" value="Borrar datos">
 
             </form>
 
