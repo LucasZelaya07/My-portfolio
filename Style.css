@@ -6,6 +6,9 @@ body{
 header {
     background-color: #BBBBBB;
     padding: 0 0;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    background: #888888;
 }
 
 .caja{
@@ -29,19 +32,25 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color: red;
+    color: whitesmoke;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    margin: 0 8px;
 }
 
 nav a:hover{
     color: #c78c19;
     text-decoration: underline;
 }
+main{
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    background: #888888;
+}
 .principal{
     padding: 3em 0;
-    background: lightblue;
+    background: #888888;
     width: 100%;
     margin: 0 auto; 
 }
@@ -51,6 +60,8 @@ nav a:hover{
     font-size: 2em;
     margin: 0 0 1em;
     clear:left;
+    box-sizing: border-box;
+    border: 2px solid #000000;
 }
 
 .principal p{
@@ -102,6 +113,34 @@ nav a:hover{
 
 .imagen-conocimientos:hover{
     opacity: 0.3;
+}
+.p-proyectos{
+    text-align: left;
+    margin: 20px;
+    font-size: 1em;
+    font-weight: bold;
+}
+footer{
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    background: #888888;
+}
+.p-contacto{
+    padding: 1em;
+    margin: 0 5%;
+    font-size: 1em;
+    text-align: center;
+}
+.logos{
+    margin: 0 35% 20px 45%;
+}
+#Linkedin:hover{
+    opacity: 0.3;
+    transform: scale(1.2);
+}
+#GitHub:hover{
+    opacity: 0.3;
+    transform: scale(1.2);
 }
 
 @media screen and (max-width:480px){
