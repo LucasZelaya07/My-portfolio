@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Lucas Zelaya portfolio</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="Style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="caja">
-                <h1><img class="nav-imagen" src="Nav.png"></h1>
-                <nav>
-                    <ul>
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="Proyectos.html">Proyectos</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main  class="main-contacto">
-            <form action="send.php" method="post" name="contacto" id ="contacto" >
 
-                <h2 class="h2-contacto"> CONTACTO</h2>
-                <label for="nombre-completo">Nombre y Apellido</label>
-                <input name="nombre" type="text" id="nombre-completo" class="input-padron">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lucas Zelaya portfolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
 
-                <label for="correoelectronico">Correo Electrónico</label>
-                <input name="email" type="email" id="correoelectronico" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" class="input-padron" required placeholder="email@dominio.com">
+<body>
+    <header>
+        <div class="caja">
+            <h1><img class="nav-imagen" src="Nav.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Proyectos.html">Proyectos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-contacto">
+        <form action=http://www.coder.com/code/mailform/mailform.pl.cgi method="post">
+            
+            <INPUT TYPE=HIDDEN NAME=MAILFORM_ID VALUE="lucaszelaya052@gmail.com">
+            <INPUT TYPE=HIDDEN NAME=MAILFORM_SUBJECT VALUE="Pagina">
+            <INPUT TYPE=HIDDEN NAME=MAILFORM_URL VALUE="http://www.htmlpoint.com/risposta.htm">
+            <h2 class="h2-contacto"> CONTACTO</h2>
+            <label for="nombre-completo">Nombre y Apellido</label>
+            <input name="nombre" type="text" id="nombre-completo" class="input-padron">
 
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input name="email" type="email" id="correoelectronico"
+                onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" class="input-padron"
+                required placeholder="email@dominio.com">
 
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" name="comentarios" class="form-control" required></textarea>
-                <input type="submit" value="Enviar formulario" class="enviar">
-                <input type="Reset" value="Borrar datos">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
-            </form>
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" name="comentarios" class="form-control" required></textarea>
+            <INPUT TYPE=SUBMIT VALUE="Envía" class="enviar"><INPUT TYPE=RESET VALUE="Cancela">
 
-        </main>
-        <footer class="footer-contacto">
-            <p class="p-contacto">Mis redes de contacto</p>
-            <div class="logos">
-                <a href="https://www.linkedin.com/in/lucas-zelaya-170866226/"><i style="font-size:50px" id="Linkedin" class="fa">&#xf08c;</i></a>
-                <a href="https://github.com/LucasZelaya07"><i style="font-size:50px" id="GitHub" class="fa">&#xf09b;</i></a>
-            </div>
-        </footer>
-    </body>
+        </form>
+        
+    </main>
+    <footer class="footer-contacto">
+        <p class="p-contacto">Mis redes de contacto</p>
+        <div class="logos">
+            <a href="https://www.linkedin.com/in/lucas-zelaya-170866226/"><i style="font-size:50px" id="Linkedin"
+                    class="fa">&#xf08c;</i></a>
+            <a href="https://github.com/LucasZelaya07"><i style="font-size:50px" id="GitHub" class="fa">&#xf09b;</i></a>
+        </div>
+    </footer>
+</body>
+
 </html>
