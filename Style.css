@@ -148,9 +148,21 @@ footer{
     background: linear-gradient(#cce9ee, rgb(151, 229, 255))
 }
 form{
-    margin: auto 40px;
+    width: 700px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
 }
-
+.h2-contacto{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 form label, form legend{
     display: block;
     font-size: 20px;
@@ -163,10 +175,16 @@ form label, form legend{
     padding: 10px 25px;
     width: 50%;
 }
+#mensaje{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 50%;
+}
 
 .enviar{
-    width: 40%;
-    padding: 15px 0;
+    width: 58%;
+    margin: auto;
+    height: 40px;
     font-size: 18px;
     font-weight: bold;
     color:white;
