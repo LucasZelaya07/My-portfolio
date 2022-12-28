@@ -203,6 +203,11 @@ form label, form legend{
     background: linear-gradient(#cce9ee, rgb(151, 229, 255))
 }
 
+/*proyecto */
+
+
+/* responsive */
+
 @media screen and (max-width:480px){
     h1{
         text-align: center;
