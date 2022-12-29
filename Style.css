@@ -235,6 +235,10 @@ form label, form legend{
     .lista-conocimientos, .imagen-conocimientos, .nav-imagen, form, body{
         width: 100%;
     }
+    .imagen-barberia{
+        margin: auto;
+        width: 100%;
+    }
     .enviar{
         width: 50%;
     }

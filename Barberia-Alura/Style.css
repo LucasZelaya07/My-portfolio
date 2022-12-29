@@ -217,7 +217,8 @@ content: "☆";
     nav{
         position: static;
     }
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .productos{
         width: auto;
     }
     .lista-diferenciales, .imagen-diferenciales{
