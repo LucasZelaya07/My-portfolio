@@ -208,7 +208,7 @@ form label, form legend{
 
 /* Barbería */
 
-.imagen-barberia{
+.imagen-proyectos{
     width: 40%;
     margin: 10px 0px 40px 400px;
     background: rgba(0, 0, 0, 0.4);
@@ -216,7 +216,7 @@ form label, form legend{
     box-shadow: 10px 10px 30px 15px #000000;
 }
 
-.imagen-barberia:hover{
+.imagen-proyectos:hover{
     opacity: 0.3;
 }
 
@@ -235,9 +235,10 @@ form label, form legend{
     .lista-conocimientos, .imagen-conocimientos, .nav-imagen, form, body{
         width: 100%;
     }
-    .imagen-barberia{
-        margin: auto;
+    .imagen-proyectos{
         width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
     .enviar{
         width: 50%;
