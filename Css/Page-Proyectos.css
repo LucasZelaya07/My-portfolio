@@ -1,0 +1,56 @@
+@import url(Estilos.css);
+
+#introduccion{
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 5px;
+    text-align: center
+}
+#proyectos h4{
+    text-align: center;
+}
+#proyectos .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h4{
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+#proyectos p{
+    margin-bottom: 20px;
+}
+#proyectos img{
+    width: 100%;
+    margin: 0 15%;
+    max-width: 280px;
+    max-height: 175px;
+    transition: 400ms;
+    box-shadow: 10px 10px 20px 15px #e40a0a;
+}
+
+#proyectos img:hover{
+    opacity: 0.3;
+    transform: scale(1.2);
+}
+@media (min-width: 768px){
+    .sociales{
+        width: auto;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+    }
+    #proyectos img{
+        margin: 0 30%;
+    }
+}
+@media (min-width: 1024px){
+    .contenedor{
+        width: 1000px;
+    }
+    #proyectos img{
+        margin: 0 35%;
+        box-shadow: 10px 10px 20px 15px #e40a0a;
+    }
+}

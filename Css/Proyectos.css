@@ -1,0 +1,45 @@
+#proyectos h3, h4{
+    text-align: center;
+}
+#proyectos .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#proyectos article{
+    margin: 15px;
+}
+#proyectos img{
+    width: 100%;
+    max-width: 280px;
+    max-height: 175px;
+    margin-left: 70px;
+}
+.imagen-conocimientos{
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #e40a0a;
+}
+#animal{
+    margin-left: 35px;
+}
+.imagen-conocimientos:hover{
+    opacity: 0.3;
+}
+h4{
+    margin-top: 20px;
+}
+@media (min-width: 768px){
+    #proyectos img{
+        width: 100%;
+        max-width: 310px;
+        max-height: 200px;
+    }
+}
+@media (min-width: 1024px){
+    #proyectos img{
+        width: 100%;
+        max-width: 400px;
+        max-height: 250px;
+        margin-left: 10px;
+    }
+}

@@ -2,39 +2,56 @@
 
 <html lang="es">
     <head>
+        <title>Lucas Zelaya Portfolio</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Lucas Zelaya portfolio</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="Style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="Css/fontello.css">
+        <link rel="stylesheet" href="Css/Page-Proyectos.css">
     </head>
     <body>
         <header>
-            <div class="caja">
-                <h1><img class="nav-imagen" src="Nav.png"></h1>
-                <nav>
-                    <ul>
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="Proyectos.html">Proyectos</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
-                    </ul>
+            <div class="contenedor">
+                <h1>Mi portfolio</h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                        <a href="Index.html">Home</a>
+                        <a href="./Proyectos.html">Proyectos</a>
+                        <a href="./Contacto.html">Contacto</a>
                 </nav>
             </div>
         </header>
         <main>
-            <h2 class="titulo-principal">Barbería Alura</h2>
-            <a href="Barberia-Alura/Index.html"><img src="Barberia-Alura/diferenciales.jpg" alt="Proyectos" class="imagen-proyectos"></a>
-            <h2 class="titulo-principal">Animales</h2>
-            <a href="Animales/Index.html"><img src="Animales/Imagenes/banner.jpg" alt="Proyectos" class="imagen-proyectos"></a>
+            <section id="introduccion">
+                <div class="contenedor">
+                    <h2>Bienvenidos a mis proyectos</h2>
+                    <p>¡Hola! Estos son los proyectos que hasta el momento he realizado. Encontraran una breve explicación acerca de ellos y cuál es el fin de cada uno de ellos.</p>
+                </div>
+            </section>
+            <section id="proyectos">
+                <div class="contenedor">
+                    <article>
+                        <h4>Proyecto Barbería Alura</h4>
+                        <p>Este es un proyecto realizado en el programa de educación de Oracle Next Education. Se simula una página web de una barbería que cuenta con 3 páginas: Index, productos y contacto.</p>
+                        <p>Es el resultado de los cursos de HTML y CSS parte 1, 2, 3 y 4 de Alura.</p>
+                        <a href="Barberia-Alura/Index.html"><img src="Imagenes/Barberia.jpg" alt="Proyecto-barberia"></a>
+                    </article>
+                    <article>
+                        <h4>Proyecto responsive con temática animales</h4>
+                        <p>Este es un proyecto realizado para entender como funciona una página web responsive. Se simula una página web acerca de los animales y se toma en cuenta como se vería la página en los distintos tamaños de pantallas, logrando siempre adaptar todo en cada una de ellas. Las medidas tomadas en cuenta son: De una pantalla de celular, de tablet y de monitor.</p>
+                        <a href="Animales/Index.html"><img src="Imagenes/Animales.jpg" id="animal" alt="proyecto-animales"></a>
+                    </article>
+                </div>
+            </section>
         </main>
         <footer>
-            <p class="p-contacto">Mis redes de contacto</p>
-            <div class="logos">
-                <a href="https://www.linkedin.com/in/lucas-zelaya-170866226/"><i style="font-size:50px" id="Linkedin" class="fa">&#xf08c;</i></a>
-                <a href="https://github.com/LucasZelaya07"><i style="font-size:50px" id="GitHub" class="fa">&#xf09b;</i></a>
+            <div class="contenedor">
+                <p class="copy">&copy Lucas Zelaya 2022</p>
+                <div class="sociales">
+                    <a class="icon-linkedin-squared" id="Linkedin" href="https://www.linkedin.com/in/lucas-zelaya-170866226/"></a>
+                    <a class="icon-github-circled" id="GitHub" href="https://github.com/LucasZelaya07"></a>
+                </div>
             </div>
         </footer>
     </body>

@@ -3,59 +3,66 @@
 <html lang="es">
 
 <head>
+    <title>Lucas Zelaya Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Lucas Zelaya portfolio</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="Css/fontello.css">
+    <link rel="stylesheet" href="Css/Page-Contacto.css">
 </head>
 
 <body>
     <header>
-        <div class="caja">
-            <h1><img class="nav-imagen" src="Nav.png"></h1>
-            <nav>
-                <ul>
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="Proyectos.html">Proyectos</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
+        <div class="contenedor">
+            <h1>Mi portfolio</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="Index.html">Home</a>
+                <a href="Proyectos.html">Proyectos</a>
+                <a href="Contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
     <main class="main-contacto">
-        <form action="https://formsubmit.co/34e0067c7111c7534b18da2b04ed8391" method="POST">
+        <div class="contenedor">
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="https://formsubmit.co/34e0067c7111c7534b18da2b04ed8391" method="POST">
+                <h2 class="h2-contacto">Contacto</h2>
+                <label for="nombreyapellido">Nombre y apellido</label>
+                <input type="text" id="nombreyapellido" name="nombrecompleto" required>
 
-            <label for="nombreyapellido">Nombre y apellido</label>
-            <input type="text" id="nombreyapellido" name="nombrecompleto" class="input-padron" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required
+                    placeholder="email@dominio.com">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="input-padron" required placeholder="email@dominio.com">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required>
 
-            <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" name="asunto" class="input-padron" required>
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono" name="telefono" required
+                    placeholder="XX XXXX XXXX">
 
-            <label for="telefono">Telefono</label>
-            <input type="number" id="telefono" name="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" name="mensaje" required></textarea>
 
-            <label for="mensaje">Mensaje</label>
-            <textarea cols="70" rows="10" id="mensaje" name="mensaje" class="input-padron" required></textarea>
+                <input type="submit" value="Enviar" name="Enviar" class="enviar">
+                <input type="hidden" name="_next" value="https://lucaszelaya.netlify.app/contacto">
 
-            <input type="submit" value="Enviar" name="Enviar" class="enviar">
-            <input type="hidden" name="_next" value="https://lucaszelaya.netlify.app/contacto" >
-
-        </form>
-        
+            </form>
+        </div>
     </main>
-    <footer class="footer-contacto">
-        <p class="p-contacto">Mis redes de contacto</p>
-        <div class="logos">
-            <a href="https://www.linkedin.com/in/lucas-zelaya-170866226/"><i style="font-size:50px" id="Linkedin"
-                    class="fa">&#xf08c;</i></a>
-            <a href="https://github.com/LucasZelaya07"><i style="font-size:50px" id="GitHub" class="fa">&#xf09b;</i></a>
+    <footer>
+        <div class="contenedor">
+            <p class="copy">&copy Lucas Zelaya 2022</p>
+            <div class="sociales">
+                <a class="icon-linkedin-squared" id="Linkedin"
+                    href="https://www.linkedin.com/in/lucas-zelaya-170866226/"></a>
+                <a class="icon-github-circled" id="GitHub" href="https://github.com/LucasZelaya07"></a>
+            </div>
         </div>
     </footer>
 </body>

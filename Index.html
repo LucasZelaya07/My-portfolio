@@ -2,72 +2,101 @@
 <html lang="es">
 
 <head>
+    <title>Lucas Zelaya Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Lucas Zelaya portfolio</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="Css/fontello.css">
+    <link rel="stylesheet" href="Css/Estilos.css">
 </head>
 
 <body>
     <header>
-        <div class="caja">
-            <h1><img class="nav-imagen" src="Nav.png"></h1>
-            <nav>
-                <ul>
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="Proyectos.html">Proyectos</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
+        <div class="contenedor">
+            <h1>Mi portfolio</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                    <a href="Index.html">Home</a>
+                    <a href="Proyectos.html">Proyectos</a>
+                    <a href="Contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
     <main>
-        <section class="principal">
-
-            <h2 class="titulo-principal">Sobre mí</h2>
-
-            <p>¡Hola! Soy Lucas Zelaya y soy estudiante de la <strong>Licenciatura en sistemas en la Universidad
-                    Nacional de General Sarmiento</strong> desde el año 2022. También estudio programación hace más de
-                un año en el lenguaje <strong>C#, un poco de .Net y SQL Server</strong> en la plataforma de <strong>Maxi
-                    programa</strong>. Desde noviembre me encuentro en el programa de <strong>Oracle Next
-                    Education</strong> y también en <strong>Open Bootcamp</strong> aprendiendo acerca de <strong>.Net y
-                    Entity Framework</strong>. Además estudio inglés británico hace 3 años y cuento con un <strong>nivel
-                    intermedio</strong>.</p>
-
-            <p id="mision"><em>Mi objetivo es: <strong>Encontrar un puesto desafiante donde pueda aplicar mis
-                        conocimientos y continuar aprendiendo.</strong></em></p>
-
-            <p>A continuación pueden encontrar la sección <strong>proyectos</strong> donde
-                pueden ver mis actuales trabajos realizados como resultado de mis estudios.</p>
-
+        <section id="banner">
+            <img src="Imagenes/Nav.png">
         </section>
-        <section class="conocimientos">
-
-            <h3 class="titulo-principal">Conocimientos actuales y Proyectos</h3>
-
-            <div class="conocimientos">
-                <ul class="lista-conocimientos">
-                    <li class="items">C#</li>
-                    <li class="items">HTML</li>
-                    <li class="items">CSS</li>
-                    <li class="items">SQL Server</li>
-                    <li class="items">Aplicaciones web con ASP .NET WebForms</li>
-                    <li class="items">Bootstrap</li>
-                    <li class="items">Inglés: Nivel intermedio (B1 - B2).</li>
-                    <p class="p-proyectos">Click en la imagen para ver proyectos ---></p>
-                </ul><a href="Proyectos.html"><img src="Conocimientos.jpg" alt="Proyectos" class="imagen-conocimientos"></a>
+        <section id="bienvenidos">
+            <div class="contenedor">
+                <h2>Bienvenidos a mi portfolio</h2>
+                <p>¡Hola! Soy Lucas Zelaya y soy estudiante de la <strong>Licenciatura en sistemas en la Universidad Nacional de General Sarmiento</strong> desde el año 2022. También estudio programación hace más de un año en el lenguaje <strong>C#, un poco de .Net y SQL Server</strong> en la plataforma de <strong>Maxi programa</strong>. Desde noviembre me encuentro en el programa de <strong>Oracle Next Education</strong> y también en <strong>Open Bootcamp</strong> aprendiendo acerca de <strong>.Net y Entity Framework</strong>. Además estudio inglés británico hace 3 años y cuento con un <strong>nivel intermedio</strong>.</p>
+                <br>
+                <p><em>Mi objetivo es: <strong>Encontrar un puesto desafiante donde pueda aplicar mis conocimientos y continuar aprendiendo.</strong></em></p>
+                <br>
+                <p>A continuación pueden encontrar la sección <strong>proyectos</strong> donde pueden ver mis actuales trabajos realizados como resultado de mis estudios.</p>
+            </div>
+            
+        </section>
+        <section id="proyectos">
+            <h3>Proyectos</h3>
+            <div class="contenedor">
+                <article>
+                    <p>Para conocer mis proyectos, haz click en la imagen.</p>
+                    <br>
+                    <br>
+                    <a href="Proyectos.html"><img src="Conocimientos.jpg" alt="Proyectos" class="imagen-conocimientos"></a>
+                </article>
+            </div>
+        </section>
+        <section id="info">
+            <h3>Cuento con conocimientos en las siguientes tecnologías y lenguajes:</h3>
+            <div class="contenedor">
+                <div class="info-conocimientos">
+                    <img src="Imagenes/C.png" alt="conocimiento-1">
+                    <br>
+                    <h>C#</h>
+                </div>
+                <div class="info-conocimientos">
+                    <img src="Imagenes/Html.png" alt="conocimiento-2">
+                    <br>
+                    <h>HTML</h>
+                </div>
+                <div class="info-conocimientos">
+                    <img src="Imagenes/Css.png" alt="conocimiento-3">
+                    <br>
+                    <h>CSS</h>
+                </div>
+                <div class="info-conocimientos">
+                    <img src="Imagenes/Mssqlserver.png" alt="conocimiento-4">
+                    <br>
+                    <h>SQL Server</h>
+                </div>
+                <div class="info-conocimientos">
+                    <img src="Imagenes/Bootstrap.png" alt="conocimiento-5">
+                    <br>
+                    <h>Bootstrap</h>
+                </div>
+                <div class="info-conocimientos">
+                    <img src="Imagenes/Asp-net.png" alt="conocimiento-6">
+                    <br>
+                    <h>Aplicaciones web con ASP .NET WebForms</h>
+                </div>
+                <div class="info-conocimientos">
+                    <img src="Imagenes/Ingles.png" alt="conocimiento-7">
+                    <br>
+                    <h>Inglés: Nivel intermedio (B1 - B2)</h>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p class="p-contacto">Mis redes de contacto</p>
-        <div class="logos">
-            <a href="https://www.linkedin.com/in/lucas-zelaya-170866226/"><i style="font-size:50px" id="Linkedin" class="fa">&#xf08c;</i></a>
-            <a href="https://github.com/LucasZelaya07"><i style="font-size:50px" id="GitHub" class="fa">&#xf09b;</i></a>
+        <div class="contenedor">
+            <p class="copy">&copy Lucas Zelaya 2022</p>
+            <div class="sociales">
+                <a class="icon-linkedin-squared" id="Linkedin" href="https://www.linkedin.com/in/lucas-zelaya-170866226/"></a>
+                <a class="icon-github-circled" id="GitHub" href="https://github.com/LucasZelaya07"></a>
+            </div>
         </div>
     </footer>
 </body>

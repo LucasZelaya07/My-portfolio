@@ -1,0 +1,87 @@
+@import url(Estilos.css);
+body{
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    background: linear-gradient(#cce9ee, rgb(151, 229, 255))
+}
+form{
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.h2-contacto{
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+input, textarea{
+    margin-bottom: 20px;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.enviar{
+    width: 58%;
+    margin: 0 0 15px 80px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+}
+footer{
+    margin-top: 100px;
+}
+@media (min-width: 768px){
+    .sociales{
+        width: auto;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+    }
+    form{
+        width: 90%;
+    }
+    .enviar{
+        margin: 0 0 15px 130px;
+    }
+}
+@media (min-width: 1024px){
+    .contenedor{
+        width: 1000px;
+    }
+    form{
+        width: 450px;
+    }
+    .enviar{
+        margin: 0 0 15px 80px;
+    }
+}
