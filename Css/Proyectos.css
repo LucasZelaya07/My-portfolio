@@ -13,14 +13,12 @@
     width: 100%;
     max-width: 280px;
     max-height: 175px;
-    margin-left: 70px;
+    margin: 0 auto;
+    display: block;
 }
 .imagen-conocimientos{
     transition: 400ms;
     box-shadow: 10px 10px 30px 15px #e40a0a;
-}
-#animal{
-    margin-left: 35px;
 }
 .imagen-conocimientos:hover{
     opacity: 0.3;
@@ -40,6 +38,5 @@ h4{
         width: 100%;
         max-width: 400px;
         max-height: 250px;
-        margin-left: 10px;
     }
 }
