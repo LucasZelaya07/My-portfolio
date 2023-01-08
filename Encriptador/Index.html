@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encriptador</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../Css/fontello.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <script type="text/javascript" src="js/Script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h1>Encriptador</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="../Proyectos.html">Proyectos</a>
+                <a href="../Contacto.html">Contacto</a>
+                <a href="../Index.html">Volver</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <form>
+                <h2>Encriptador</h2>
+                <label for="txtEncriptado">Ingrese su texto (sin mayúsculas ni caracteres especiales)</label>
+                <input name="resultado1" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" id="txtEncriptado">
+                <br>
+                <label for="txtDesencriptado">Resultado</label>
+                <textarea name="resultado2" id="txtDesencriptado" cols="20" row="5"></textarea>
+                <br>
+                <button type="button" id="btnEncriptado">Encriptar</button>
+                <button type="button" id="btnDesencriptado">Desencriptar</button>
+                <button type="button" id="btnCopiar">Copiar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="p-contacto">Mis redes de contacto</p>
+        <div class="contenedor">
+            <p class="copy">&copy Lucas Zelaya 2022</p>
+            <div class="sociales">
+                <a class="icon-linkedin-squared" id="Linkedin"
+                    href="https://www.linkedin.com/in/lucas-zelaya-170866226/"></a>
+                <a class="icon-github-circled" id="GitHub" href="https://github.com/LucasZelaya07"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var btnEncrip = document.querySelector("#btnEncriptado");
+    btnEncrip.onclick = encriptar;
+    var btnDesencrip = document.querySelector("#btnDesencriptado");
+    btnDesencrip.onclick = desencriptar;
+    var btnCop = document.querySelector("#btnCopiar");
+    btnCop.onclick = copiar;
+</script>
+
+</html>
